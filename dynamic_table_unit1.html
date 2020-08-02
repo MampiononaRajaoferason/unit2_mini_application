@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>build-table DOM</title>
+
+    <style>
+#div1 {margin:10px;font-size:1.25em;}
+table {border-collapse:collapse;border:1px solid #7f7f7f;}
+td {border:1px solid #7f7f7f;width:50px;height:50px;text-align:center;}
+
+#color_block div{
+  display: inline-block;
+  border: solid 1px black;
+  width: 20px;
+  height: 20px;
+}
+
+.highlight{
+  background:grey;
+}
+
+.neutral{
+  background: white;
+}
+.box1{
+  background: green;
+}
+
+.box2{
+  background: yellow;
+}
+.box3{
+  background: red;
+}
+
+.box4{
+  background: black;
+}
+
+</style>
+
+
+  </head>
+  <body>
+    <form action="url-to-submit-the-survey" id="survey-form">
+
+      <div class="form-group">
+          <label id="row_label" for="rows">Total Rows</label>
+          <input
+          id="row"
+          name="rows"
+          type="text"
+          class="form-control"
+          placeholder="Enter Rows" required/>
+      </div>
+
+      <div class="form-group">
+          <label id="column_label" for="columns">Total Columns</label>
+          <input
+          id="column"
+          name="rows"
+          type="text"
+          class="form-control"
+          placeholder="Enter Columns" required/>
+      </div>
+
+    </form>
+
+    <button type="button" name="button_try" onclick="function_add()">Validate</button>
+
+    <!--Here goes the table that we will generate-->
+    <div id="div1" ></div>
+
+    <div id='color_block'>
+      <div  id="box1" style="background: green;border: 1px solid;">
+
+      </div>
+      <div id="box2"  style="background: yellow;border: 1px solid;">
+
+      </div>
+      <div id="box3" style="background: red;border: 1px solid;">
+
+
+      </div>
+      <div id="box4" style="background: black;border: 1px solid;">
+
+
+      </div>
+
+    </div>
+
+  </body>
+
+  <script src="build_dynamic_table.js"></script>
+
+  <script type="text/javascript">
+
+
+  </script>
+</html>
